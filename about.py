@@ -18,13 +18,14 @@ def render_about_tab():
     """Renders the comprehensive About & Architecture view."""
     
     st.header("֎ About DocuMind")
-    st.caption("Next-Generation Multimodal Document Intelligence & Grounded Question-Answering")
+    st.caption("Your PDF. Your questions. Intelligent answers.")
     
     st.info(
-        "**DocuMind** bridges the critical gap in traditional document search by treating "
-        "**Text, Complex Tables, and Visual Figures/Charts** as first-class citizens. "
-        "Built on the cutting-edge RAG architecture from Google Gemini and Jina AI, "
-        "it delivers grounded, verifiable answers with pinpoint source citations."
+        "**DocuMind** lets you chat with your PDF using natural language. "
+        "Simply upload a document, ask a question, and DocuMind retrieves the "
+        "most relevant information from the document to generate an answer. "
+        "It can understand **text, tables, figures, and charts**, and provides "
+        "**citations to the source content** so you can verify the answer."
     )
 
     # Key Highlights Metrics
@@ -40,7 +41,42 @@ def render_about_tab():
 
     st.divider()
 
-    # SECTION 1: SYSTEM ARCHITECTURE
+    # SECTION 1: HOW TO USE
+    st.subheader("📖 How to Use DocuMind")
+    
+    col_a, col_b = st.columns(2)
+    with col_a:
+        st.markdown(
+            """
+            **Step 1: Upload Your Document**
+            - Switch to **Document Assistant** tab.
+            - Upload any complex PDF (financial reports, research papers, manuals, contracts).
+            - Click **Process Document** and follow the live progress bar.
+
+            **Step 2: Instant Exact Word Search**
+            - Use the **Direct Word Check** at the top of the tab.
+            - Type any specific keyword, term, or entity name to pull exact matching chunks and pages instantly.
+            """
+        )
+    with col_b:
+        st.markdown(
+            """
+            **Step 3: Interactive Q&A Chat**
+            - Ask questions about text, tables, or charts in the chat box.
+            - DocuMind cites page numbers, tables, and figures for each answer.
+            - Click **Inspect All Retrieved Chunks** to verify raw evidence.
+
+            **Step 4: Verify in Scrollable PDF Viewer**
+            - Use the built-in PDF viewer on the right side to inspect the exact pages referenced in the answer.
+            """
+        )
+
+    st.divider()
+
+    st.divider()
+
+
+    # SECTION 2: SYSTEM ARCHITECTURE
     st.subheader("🏛️ System Architecture")
     st.write(
         "DocuMind operates on a 7-stage pipeline engineered for fidelity, accuracy, and depth. "
@@ -91,7 +127,7 @@ def render_about_tab():
 
     st.divider()
 
-    # SECTION 2: PROCESSING FLOW
+    # SECTION 3: PROCESSING FLOW
     st.subheader("🔄 End-to-End Processing & Retrieval Flow")
     
     flow_col1, flow_col2 = st.columns(2)
@@ -125,39 +161,6 @@ def render_about_tab():
 
     st.divider()
 
-    # SECTION 3: HOW TO USE
-    st.subheader("📖 How to Use DocuMind")
-    
-    col_a, col_b = st.columns(2)
-    with col_a:
-        st.markdown(
-            """
-            **Step 1: Upload Your Document**
-            - Switch to **Document Assistant** tab.
-            - Upload any complex PDF (financial reports, research papers, manuals, contracts).
-            - Click **Process Document** and follow the live progress bar.
-
-            **Step 2: Instant Exact Word Search**
-            - Use the **Direct Word Check** at the top of the tab.
-            - Type any specific keyword, term, or entity name to pull exact matching chunks and pages instantly.
-            """
-        )
-    with col_b:
-        st.markdown(
-            """
-            **Step 3: Interactive Q&A Chat**
-            - Ask questions about text, tables, or charts in the chat box.
-            - DocuMind cites page numbers, tables, and figures for each answer.
-            - Click **Inspect All Retrieved Chunks** to verify raw evidence.
-
-            **Step 4: Verify in Scrollable PDF Viewer**
-            - Use the built-in PDF viewer on the right side to inspect the exact pages referenced in the answer.
-            """
-        )
-
-    st.divider()
-
-    st.divider()
 
     # SECTION 4: API LIMITS & HOW TO USE YOUR OWN KEYS
     st.subheader("🔑 API Key Limits & Using Your Own Keys")
@@ -202,7 +205,6 @@ def render_about_tab():
     with sup_col1:
         st.write("#### 👨‍💻 Developer Profile")
         st.write("- **Developer:** **Gopinath S**")
-        st.write("- **Email:** [gopinath.sara1n@gmail.com](mailto:gopinath.sara1n@gmail.com)")
         st.write("- **LinkedIn:** [linkedin.com/in/gopinaths](https://www.linkedin.com/in/gopinaths)")
         st.write("- **GitHub:** [github.com/gopinath-sara1n](https://github.com/gopinath-sara1n)")
         
@@ -223,4 +225,4 @@ def render_about_tab():
             """
         )
 
-    st.success("DocuMind is engineered by Gopinath S with enterprise-grade precision!")
+    st.success("DocuMind is engineered by Gopinath S!")
