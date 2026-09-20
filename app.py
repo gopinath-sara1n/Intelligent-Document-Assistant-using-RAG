@@ -27,7 +27,7 @@ from about import render_about_tab
 
 st.set_page_config(
     page_title="DocuMind - Intelligent Document Assistant",
-    page_icon="🧠",
+    page_icon="֎",
     layout="wide",
     initial_sidebar_state="expanded"
 )
