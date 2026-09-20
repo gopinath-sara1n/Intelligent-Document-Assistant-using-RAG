@@ -150,7 +150,7 @@ with st.sidebar:
 # 4. MAIN HEADER
 # ---------------------------------------------------------------------------
 
-st.title("🧠 DocuMind")
+st.title("֎ DocuMind")
 st.caption("Intelligent Document Assistant with Multimodal Visual Understanding & Precision Citations")
 
 # Tab Navigation
