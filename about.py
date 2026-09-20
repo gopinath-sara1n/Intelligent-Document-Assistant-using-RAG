@@ -17,7 +17,7 @@ import streamlit as st
 def render_about_tab():
     """Renders the comprehensive About & Architecture view."""
     
-    st.header("🧠 About DocuMind")
+    st.header("֎ About DocuMind")
     st.caption("Next-Generation Multimodal Document Intelligence & Grounded Question-Answering")
     
     st.info(
