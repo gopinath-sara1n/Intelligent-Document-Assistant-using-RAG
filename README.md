@@ -1,4 +1,4 @@
-# DocuMind — Intelligent Document Assistant using RAG
+# ֎ DocuMind — Intelligent Document Assistant using RAG
 
 **DocuMind** is a multimodal Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and ask natural-language questions about their content.
 
