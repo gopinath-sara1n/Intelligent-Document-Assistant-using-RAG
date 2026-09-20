@@ -151,7 +151,7 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 
 st.title("֎ DocuMind")
-st.caption("Intelligent Document Assistant with Multimodal Visual Understanding & Precision Citations")
+st.caption("Chat with your PDF — Understand text, tables, and visuals with AI-powered answers and precise citations.")
 
 # Tab Navigation
 tab1, tab2 = st.tabs(["📄 Document Assistant", "ℹ️ About & Architecture"])
@@ -212,7 +212,7 @@ with tab1:
         uploaded_pdf = st.file_uploader(
             "Upload a PDF document to begin intelligent analysis",
             type=["pdf"],
-            help="Upload financial reports, technical papers, manuals, or contracts."
+            help="Upload financial reports, technical papers, manuals, etc."
         )
 
         col_proc1, col_proc2 = st.columns([1, 4])
